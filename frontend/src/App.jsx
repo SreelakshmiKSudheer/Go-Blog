@@ -3,31 +3,28 @@ import React from 'react'
 import Home from './components/Home'
 import Add from './components/Add'
 import Read from './components/Read'
+import Header from "./elements/Header"
 
 function App() {
 
   return (
     <>
+    <Header />
       <Router>
-        <nav className='bg-gray-800 shadow-lg'>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-            <ul className='flex space-x-6 py-4'>
-              <li>
+        <nav className='bg-[#463120] shadow-lg h-[8vh]'>
+          <div className='flex justify-start items-center px-10 font-semibold text-lg h-full space-x-4'>
+              
                 <Link to='/'
-                  className='text-white hover:text-gray-300'
+                  className='text-white hover:text-gray-300 my-auto'
                 >Home</Link>
-              </li>
-              <li>
+              
                 <Link to='/read'
-                  className='text-white hover:text-gray-300'
+                  className='text-white hover:text-gray-300 my-auto'
                 >Read Blogs</Link>
-              </li>
-              <li>
+              
                 <Link to='/add'
-                  className='text-white hover:text-gray-300'
+                  className='text-white hover:text-gray-300 my-auto'
                 >Add Blogs</Link>
-              </li>
-            </ul>
           </div>
         </nav>
         <Routes>
