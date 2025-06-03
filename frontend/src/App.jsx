@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Add from './components/Add'
 import Read from './components/Read'
 import Header from "./elements/Header"
+import Doc from "./elements/Doc"
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/read' element={<Read />} />
           <Route path='/add' element={<Add />} />
+          <Route path='/docs' element={<Doc />} />
         </Routes>
       </Router>
     </>
