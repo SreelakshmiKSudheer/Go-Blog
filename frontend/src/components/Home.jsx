@@ -13,10 +13,10 @@ const Home = () => {
                     Share your thoughts, read amazing stories, and connect with fellow bloggers. Start your blogging journey today—where every story finds its voice!
                 </p>
                 <div className="flex space-x-4">
-                    <button className="px-6 py-2 bg-[#463120] border-white text-white font-medium rounded hover:bg-[#795a40] transition">
+                    <button className="px-6 py-2 bg-gradient-to-r from-[#463120] to-[#795a40] text-white font-medium rounded hover:bg-[#795a40] transition">
                         <Link to='/docs'>Get Started</Link>
                     </button>
-                    <button className="px-6 py-2 bg-white border-[#463120] text-[#463120] rounded font-medium hover:bg-[#795a40] transition">
+                    <button className="px-6 py-2 bg-gradient-to-r from-[#fff] to-[#fce4d0] text-[#463120] rounded font-medium hover:bg-[#795a40] transition">
                         <Link to='/read'>Explore Blogs</Link>
                     </button>
                 </div>
