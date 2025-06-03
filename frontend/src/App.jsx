@@ -12,18 +12,18 @@ function App() {
     <Header />
       <Router>
         <nav className='bg-[#463120] shadow-lg h-[8vh]'>
-          <div className='flex justify-start items-center px-10 font-semibold text-lg h-full space-x-4'>
+          <div className='flex justify-start items-center px-2 font-semibold text-lg h-full '>
               
                 <Link to='/'
-                  className='text-white hover:text-gray-300 my-auto'
+                  className='text-white hover:text-gray-300 hover:bg-[#795a40] my-auto py-2 px-8'
                 >Home</Link>
               
                 <Link to='/read'
-                  className='text-white hover:text-gray-300 my-auto'
+                  className='text-white hover:text-gray-300 my-auto  hover:bg-[#795a40] py-2 px-8'
                 >Read Blogs</Link>
               
                 <Link to='/add'
-                  className='text-white hover:text-gray-300 my-auto'
+                  className='text-white hover:text-gray-300 my-auto  hover:bg-[#795a40] py-2 px-8'
                 >Add Blogs</Link>
           </div>
         </nav>
