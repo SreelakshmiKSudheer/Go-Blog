@@ -4,18 +4,17 @@ const Blog = require('./models/blog'); // Adjust the path as necessary
 const cors = require('cors');
 
 const app = express()
-const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cors());
 require('dotenv').config()
-console.log(process.env.MONGODB_URL)
+// console.log(process.env.MONGODB_URL)
 
 main()
   .then(() => {
     console.log('Connected to MongoDB');
-    app.listen(port, () => {
-      console.log(`Example app listening on port ${port}`)
+    app.listen(process.env.PORT, () => {
+      console.log(`Example app listening port ${process.env.PORT}`)
     });
   })
   .catch(err => {
@@ -60,8 +59,8 @@ app.get('/', async (req, res) => {
 });
 
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+app.listen(process.env.PORT, () => {
+  console.log(`Example app listening on port ${process.env.PORT}`)
 })
 
 console.log('Backend server is running...')
