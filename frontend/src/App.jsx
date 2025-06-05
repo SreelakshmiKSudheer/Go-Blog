@@ -25,7 +25,7 @@ function App() {
               
                 <Link to='/add'
                   className='text-white hover:text-gray-300 my-auto  hover:bg-[#795a40] py-2 px-8'
-                >Add Blogs</Link>
+                >Post Blogs</Link>
           </div>
         </nav>
         <Routes>
